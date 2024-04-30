@@ -23,17 +23,17 @@ async def hey (ctx):
   await ctx.send('whatsup?')
 
 
-@client.event                                                                                #any event is prokved by itself like member got in or out from the server or guild 
+@client.event                                                                              #any event is prokved by itself like member got in or out from the server or guild 
 
 async def on_member_join (member):                                                         # you should read the discord.py documenatation to know or search on the built in functions like 'on_ready' , 'on_member_join'
-    channel=client.get_channel (1233780728928665653)                                       # most of the 'def' used are built in   
+    channel=client.get_channel ()                                                          # most of the 'def' used are built in   
     await channel.send('welecome ya habibi!')
 
 
 
 @client.event                                                                               #any event is prokved by itself like member got in or out from the server or guild 
 async def on_member_remove (member):         
-       channel=client.get_channel (1233780728928665653)                                       # most of the 'def' used are built in   
+       channel=client.get_channel ()                                                         # most of the 'def' used are built in   
        await channel.send('bye bye habibi')                                       
 
 
